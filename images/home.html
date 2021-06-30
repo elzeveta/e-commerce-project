@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Comerce One</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- side bar -->
+    <nav class="sidenav" id="sidenav-id">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+        &times;
+      </a>
+      <h4 class="nav-logo">Seytech</h4>
+      <div class="nav-menu product-nav">
+        <a href="#">Shirts</a>
+        <a href="#">Jeans</a>
+        <a class="collapsible" href="#">
+          Dresses
+          <i class="fas fa-caret-down"></i>
+        </a>
+        <div class="content">
+          <a href="#skinny">Mini</a>
+          <a href="#relaxed">Midi</a>
+          <a href="#bootcut">Maxi</a>
+          <a href="#straight">Straight</a>
+        </div>
+        <a href="#">Jackets</a>
+        <a href="#">Gymwear</a>
+        <a href="#">Blazers</a>
+        <a href="#">Shoes</a>
+      </div>
+      <div class="nav-menu contact-nav">
+        <a href="#">Contact</a>
+        <a href="#">Newsletter</a>
+        <a href="#">Subscribe</a>
+      </div>
+    </nav>
+
+    <div class="content-wrapper">
+      <!-- header -->
+      <header class="mobile-header">
+        <div class="signs logo">LOGO</div>
+        <div class="hamburger-menu">
+          <span style="font-size: 30px; cursor: pointer;" onclick="openNav()">
+            <i class="fa fa-bars" aria-hidden="true" onclick="openNav()"></i>
+          </span>
+        </div>
+      </header>
+
+      <header class="main-header">
+        <div class="signs jeans">Dresses</div>
+        <div class="cart-seach-icon">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+      </header>
+
+      <!-- main -->
+      <main>
+        <!-- shop now -->
+        <section class="shop-now">
+          <img
+            src="./images/dress (15).jpg"
+            alt="hipster-photo"
+          />
+          <div class="wrapper-shop-now">
+            <h1 class="signs new-arrival">New arrivals</h1>
+            <p class="signs collection">COLLECTION 2021</p>
+            <a class="signs" href="#shop-now">SHOP NOW</a>
+          </div>
+        </section>
+
+        <!-- jeans models and prices -->
+        <p class="items-count">8 items</p>
+        <section class="items">
+          <div class="item">
+            <div class="item-img-wrapper">
+              <img
+                src="./images/dress (30).jpg"
+                alt="ripped skinny jeans"
+              />
+            </div>
+            <p>
+              Short dress with buttons
+              <br />
+              <b>$24.99</b>
+            </p>
+          </div>
+          <div class="item">
+            <div class="item-img-wrapper">
+              <img
+                src="./images/dress (17).jpg"
+                alt="mega ripped jeans"
+              />
+              <button class="btn-buy-now">
+                Buy now <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              </button>
+            </div>
+            <span class="item-top-left">New</span>
+            <p>
+              Maxi cosy dress
+              <br />
+              <b>$19.99</b>
+            </p>
+          </div>
+          <div class="item">
+            <div class="item-img-wrapper">
+              <img
+                src="./images/dress (21).jpg"
+                alt="washed skinny jeans"
+              />
+            </div>
+            <p>
+              Silk dress
+              <br />
+              <b>$20.50</b>
+            </p>
+          </div>
+          <div class="item">
+            <div class="item-img-wrapper">
+              <img
+                src="./images/dress (29).jpg"
+                alt="vintage skinny jeans"
+              />
+            </div>
+            <p>
+              Shifon dress
+              <br />
+              <b>$14.99</b>
+            </p>
+          </div>
+          <div class="item">
+            <div class="item-img-wrapper">
+              <img
+                src="./images/dress (5).jpg"
+                alt="ripped skinny jeans"
+              />
+            </div>
+            <p>
+              Maxi cotton dress
+              <br />
+              <b>$19.99</b>
+            </p>
+          </div>
+          <div class="item">
+            <div class="item-img-wrapper">
+              <img
+                src="./images/dress (9).jpg"
+                alt="washed skinny jeans"
+              />
+            </div>
+            <p>
+              Shifon dress
+              <br />
+              <b>$20.50</b>
+            </p>
+          </div>
+          <div class="item">
+            <div class="item-img-wrapper">
+              <img
+                src="./images/dress (38).jpg"
+                alt="vintage skinny jeans"
+              />
+              <button class="btn-buy-now">
+                Buy now <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              </button>
+            </div>
+            <span class="item-top-left">Sale</span>
+            <p>
+              Dress with buttons
+              <br />
+              <b>$14.99</b>
+            </p>
+          </div>
+          <div class="item">
+            <div class="item-img-wrapper">
+              <img
+                src="./images/dress (22).jpg"
+                alt="ripped skinny jeans"
+              />
+            </div>
+            <p>
+              Cotton dress
+              <br />
+              <b>$24.99</b>
+            </p>
+          </div>
+        </section>
+
+        <!-- email contact -->
+
+        <!-- Place for Umut's code -->
+        <section class="container">
+          <div class="black">
+            <h1 class="h">Subscribe</h1>
+            <p class="sub">To get special offers and VIP treatment:</p>
+            <input
+              class="email"
+              type="e-mail"
+              id="email"
+              placeholder="Enter e-mail"
+            />
+            <input type="submit" id="submit" />
+          </div>
+        </section>
+
+        <!-- contact information -->
+        <section class="contact-info">
+          <!-- contact form -->
+          <div class="contact">
+            <h3>Contact</h3>
+            <p class="first-list-element-info">Questions? Go ahead.</p>
+            <form action="#">
+              <input
+                class="in-put box"
+                type="text"
+                id="name"
+                placeholder="Name"
+                required
+              />
+              <input
+                class="in-put box"
+                type="email"
+                id="email"
+                placeholder="Email"
+                required
+              />
+              <input
+                class="in-put box"
+                type="text"
+                id="subject"
+                placeholder="Subject"
+              />
+              <input
+                class="in-put box"
+                type="text"
+                id="message"
+                placeholder="Message"
+                required
+              />
+              <input class="in-put button" type="submit" id="submit" required />
+            </form>
+          </div>
+
+          <!-- about -->
+          <div class="about">
+            <h3>About</h3>
+            <ul class="about-list">
+              <li class="first-list-element-info">
+                <a href="#about-us.html">About us</a>
+              </li>
+              <li>
+                <a href="#job-vacancy.html" target="_blank">We're hiring</a>
+              </li>
+              <li><a href="#support.html" target="_blank">Support</a></li>
+              <li><a href="#stores.html" target="_blank">Find store</a></li>
+              <li><a href="#shipment.html">Shipment</a></li>
+              <li><a href="#payment.html" target="_blank">Payment</a></li>
+              <li><a href="#giftcards.html" target="_blank">Gift card</a></li>
+              <li><a href="#return" target="_blank">Return</a></li>
+              <li><a href="#help.html">Help</a></li>
+            </ul>
+          </div>
+
+          <!-- store details -->
+          <div class="store">
+            <h3>Store</h3>
+            <div class="details">
+              <div class="first-list-element-info">
+                <i class="fa fa-map-marker"></i> Company Name
+              </div>
+              <div><i class="fa fa-phone"></i> 0044123123</div>
+              <div><i class="fa fa-envelope"></i> ex@mail.com</div>
+            </div>
+            <h3>We Accept</h3>
+            <div class="first-list-element-info">
+              <div class="payment">
+                <div class="about-us-contact-list">
+                  <i class="fa fa-cc-amex"></i> Amex
+                </div>
+                <div><i class="fa fa-credit-card"></i> Credit Card</div>
+              </div>
+              <div class="social-web-icons">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-snapchat"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- footer -->
+      <footer>
+        <div class="signs">
+          Powered by <a class="signs" href="#team-asel">team Asel</a>
+        </div>
+      </footer>
+    </div>
+
+    <!-- !!! ANIMATION !!! --- DO NOT MOVE -->
+    <script>
+      function openNav() {
+        document.getElementById('sidenav-id').style.width = '250px'
+      }
+
+      function closeNav() {
+        document.getElementById('sidenav-id').style.width = '0'
+      }
+
+      var coll = document.getElementsByClassName('collapsible')
+      var i
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener('click', function () {
+          this.classList.toggle('active')
+          var content = this.nextElementSibling
+          if (content.style.display === 'block') {
+            content.style.display = 'none'
+          } else {
+            content.style.display = 'block'
+          }
+        })
+      }
+    </script>
+  </body>
+</html>
