@@ -1,0 +1,479 @@
+/* DEFAULT IS MOBILE FIRST */
+
+body {
+    margin: 0;
+    padding: 0%;
+    min-width: 360px;
+  }
+  
+  .content-wrapper {
+    width: 100%;
+  }
+  
+  /* common header styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 84px;
+    padding: 0 16px;
+  }
+  
+  .fa {
+    font-size: 24px !important;
+  }
+  
+  .signs {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: white;
+  }
+  
+  /* mobile header only visible on phones */
+  .mobile-header {
+    background-color: black;
+  }
+  
+  .logo {
+    letter-spacing: 5px;
+  }
+  
+  .jeans {
+    color: black;
+  }
+  
+  .fa-bars {
+    color: white;
+  }
+  
+  /* main header visible on all devices */
+  .fa-shopping-cart {
+    margin-right: 24px !important;
+  }
+  
+  /* main */
+  /* shop now */
+  .shop-now {
+    position: relative;
+    margin: 0px 16px;
+  }
+  
+  .shop-now img {
+    width: 100%;
+  }
+  
+  .wrapper-shop-now {
+    position: absolute;
+    top: 0px;
+    padding-top: 24px;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .new-arrival {
+    font-size: 36px;
+    margin: 10px 0;
+  }
+  
+  .collection {
+    display: none;
+  }
+  
+  .shop-now a {
+    text-decoration: none;
+    background-color: black;
+    width: 110px;
+    padding: 12px 24px;
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    color: white;
+  }
+  
+  footer p {
+    font-size: 15px;
+  }
+  
+  /* Rustam's style */
+  #sidenav-id {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    width: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .sidenav a {
+    text-decoration: none;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    color: #757575;
+    margin: 10px 0px;
+  }
+  
+  .nav-logo {
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    margin: 25px 0;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 2px;
+    padding-left: 15px;
+  }
+  
+  .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0px;
+    padding: 5px 10px;
+    font-size: 35px;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .nav-menu {
+    width: 100%;
+  }
+  
+  .contact-nav a {
+    font-size: 15px;
+    color: #000000;
+    width: calc(100% - 30px);
+    padding: 0px 15px;
+  }
+  
+  .product-nav {
+    margin-top: 64px;
+    margin-bottom: 64px;
+    font-size: 18px;
+  }
+  
+  .product-nav a {
+    width: calc(100% - 30px);
+    padding: 0px 15px;
+  }
+  
+  .sidenav a:hover {
+    color: black;
+    background-color: #cccccc;
+  }
+  
+  .collapsible {
+    cursor: pointer;
+    margin: 0;
+  }
+  
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+    font-size: 16px;
+  }
+  
+  /* ************************ */
+  /* ********* media ******** */
+  /* ************************ */
+  
+  @media only screen and (min-width: 601px) {
+    .new-arrival {
+      font-size: 64px;
+    }
+  
+    .collection {
+      display: block;
+      font-size: 36px;
+      margin: 10px 0;
+    }
+  }
+  
+  @media only screen and (min-width: 769px) {
+    .mobile-header {
+      display: none;
+      background-color: black;
+    }
+  
+    body {
+      display: flex;
+    }
+  
+    #sidenav-id {
+      position: relative;
+      width: 250px !important;
+    }
+  
+    .closebtn {
+      visibility: hidden;
+    }
+  
+    .content-wrapper {
+      width: calc(100%-250px);
+    }
+  
+    .item {
+      flex: 0 1 calc(50% - 32px);
+      margin: 0 16px;
+    }
+  }
+  
+  @media only screen and (min-width: 1201px) {
+    body {
+      justify-content: center;
+    }
+  
+    .content-wrapper {
+      width: 950px;
+    }
+  }
+  
+  /* Eliza's style */
+  
+  /* items */
+  .items {
+    /* font-family: 'Montserrat', sans-serif; */
+    font-size: 15px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    /* filter: grayscale(75%); */
+  }
+  
+  .items-count {
+    color: #757575;
+    margin: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+  }
+  
+  .item {
+    flex: 0 1 calc(25% - 32px);
+    margin: 0 16px;
+    position: relative;
+  }
+  
+  .item img {
+    width: 100%;
+    display: block;
+    border: 0;
+    height: auto;
+  }
+  
+  .item-top-left {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 8px 0 18px;
+    background: black;
+    color: white;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .item {
+      flex: 0 1 calc(50% - 32px);
+      margin: 0 16px;
+    }
+  }
+  
+  .item-img-wrapper {
+    position: relative;
+    font-size: 15px;
+  }
+  
+  .btn-buy-now {
+    display: none;
+    text-align: center;
+    border: 0;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background: black;
+    padding: 8px 16px;
+    vertical-align: middle;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+  }
+  
+  .item-img-wrapper img:hover + .btn-buy-now {
+    display: inline-block;
+    font-size: 15px;
+  }
+  
+  .btn-buy-now:hover {
+    display: inline-block;
+    color: black;
+    background: lightgrey;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  
+  .item-img-wrapper .btn-buy-now .fa-shopping-cart {
+    font-size: 15px !important;
+  }
+  
+  /* Begaiym's style */
+  
+  .contact-info {
+    width: 100%;
+    padding: 68px 0px;
+    background-color: #f1f1f1;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .contact-info h3 {
+    font-size: 20px;
+  }
+  
+  .contact,
+  .about,
+  .store {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: flex-start;
+    width: calc(100% / 3);
+    padding: 0px 10px;
+  }
+  
+  .store {
+    align-items: flex-start;
+  }
+  
+  .box,
+  .button {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+  }
+  
+  .about-list {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .about-list li {
+    margin: 18px 0px;
+  }
+  
+  .about a {
+    color: black;
+  }
+  
+  .about a:hover {
+    color: gray;
+  }
+  
+  .store {
+    display: flex;
+    align-items: center;
+  }
+  
+  .details div,
+  .payment div {
+    margin: 15px 0px;
+  }
+  
+  .first-list-element-info {
+    margin-top: 0 !important;
+  }
+  
+  .store .fa {
+    font-size: 12px !important;
+  }
+  
+  .social-web-icons {
+    margin: 20px 0px;
+  }
+  
+  .social-web-icons .fab {
+    font-size: 18px !important;
+    margin-right: 2px;
+    color: black;
+  }
+  
+  .form-wrapper {
+    display: inline-block;
+    width: 30%;
+    margin: 0;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: finish;
+  }
+  form input {
+    width: 25%;
+    margin: 10px 0px;
+  }
+  
+  form input[type='submit'] {
+    font-size: 25px;
+  }
+  
+  /*Umut Muratbekova*/
+  .container {
+    background-color: black;
+  }
+  .black {
+    text-decoration: none;
+    margin: 30px 20px 30px 20px;
+    padding: 50px 10px 40px 10px;
+  }
+  h1 {
+    color: white;
+    font-size: 55px;
+  }
+  /* p {
+    color: white;
+    font-size: 27px !important;
+  } */
+  .button {
+    background-color: #f44336;
+    color: white;
+    padding: 8px 18px;
+    border: none;
+  }
+  .email {
+    width: 100%;
+    font: inherit;
+    margin: 0;
+  }
+  #submit {
+    padding: 5px 10px;
+    margin-top: 10px;
+  }
+  .sub {
+    color: #fff;
+  }
+  .h {
+    margin: 0;
+  }
+  #email {
+    padding: 5px 0;
+  }
